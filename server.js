@@ -21,9 +21,8 @@ const startServer = async () => {
     await connectToDatabase()
 
     // Routes
-    app.get('/', async (req, res) => {
-      res.render('index')
-    })
+    app.get('/', controllers.index)
+    app.post('/add', controllers.addReminder)
 
     // Listen
     const PORT = process.env.PORT || 3000

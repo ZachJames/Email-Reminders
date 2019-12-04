@@ -13,10 +13,10 @@
       <div class="mailbox">📫</div>
       <div class="form">
         <h1>Schedule an email reminder:</h1>
-        <form action="POST">
-          <input type="text" placeholder="Reminder text" />
-          <input type="email" placeholder="Email to send to" />
-          <select>
+        <form method="POST" action="/add">
+          <input name="text" type="text" placeholder="Reminder text" />
+          <input name="forEmail" type="email" placeholder="Email to send to" />
+          <select name="time">
             <option>What upcoming</option>
             <option>1:00</option>
             <option>1:00</option>
@@ -24,6 +24,10 @@
           </select>
           <button type="submit">Schedule</button>
         </form>
+        <small
+          >There are <%= totalReminders %> reminders currently scheduled to be
+          sent.</small
+        >
       </div>
     </div>
     <footer>
