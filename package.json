@@ -1,0 +1,21 @@
+{
+  "name": "email-reminders",
+  "version": "1.0.0",
+  "description": "A simple tool to schedule email reminders to yourself or others",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Zach Weinberg",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.2"
+  }
+}
