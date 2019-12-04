@@ -9,6 +9,25 @@
     <link href="/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Email Reminders!</h1>
+    <div class="box">
+      <div class="mailbox">📫</div>
+      <div class="form">
+        <h1>Schedule an email reminder:</h1>
+        <form action="POST">
+          <input type="text" placeholder="Reminder text" />
+          <input type="email" placeholder="Email to send to" />
+          <select>
+            <option>What upcoming</option>
+            <option>1:00</option>
+            <option>1:00</option>
+            <option>1:00</option>
+          </select>
+          <button type="submit">Schedule</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      Built by <a href="https://github.com/ZachJames">Zach Weinberg</a>
+    </footer>
   </body>
 </html>
